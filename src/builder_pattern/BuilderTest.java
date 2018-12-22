@@ -6,6 +6,9 @@ import builder_pattern.builde.Ibuilde2;
 import builder_pattern.easy_builder.BuildProduct1;
 import builder_pattern.easy_builder.Director;
 import builder_pattern.easy_builder.Ibuild;
+import builder_pattern.super_build.BuildProduct5;
+import builder_pattern.super_build.Director3;
+import builder_pattern.super_build.Ibuild3;
 
 /**
  * 生成器模式，也称为建造者模式。
@@ -39,6 +42,11 @@ public class BuilderTest {
         Ibuilde2 ibuilde2 = new BuildProduct4();
         Director2 director2 = new Director2(ibuilde2);
         Product p2 = director2.build();
+
+        //假如泛型后的生成器
+        Ibuild3 ibuilde3 = new BuildProduct5();
+        Director3 director3 = new Director3(ibuilde3);
+        Product p3 = (Product) director3.build();
 
     }
 }
