@@ -12,7 +12,7 @@ import builder_pattern.super_build.Ibuild3;
 
 /**
  * 生成器模式，也称为建造者模式。
- * 这种模式作用：创建复杂对象的问题 ，分离构建和表示。
+ * 这种模式作用：创建复杂对象的问题 ，分离构建和表示。：同流程，异界面
  * <p>
  * 普通对象，class A {
  * String a;
