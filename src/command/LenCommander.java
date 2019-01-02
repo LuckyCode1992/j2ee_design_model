@@ -1,5 +1,7 @@
 package command;
-
+/**
+ * 命令发送者
+ */
 public class LenCommander implements ICommand {
     PolyonCalc calc;
     Point pt[];
